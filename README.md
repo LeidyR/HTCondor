@@ -15,7 +15,7 @@ Una vez descargados los archivos se ejecutarán los siguientes pasos.
 
 Levantar el contenedor:
 
-docker run -d --rm --mount type=bind,source=/home/leidy/Escritorio/WorkshopComputationalPlatforms-master/HTCondor_2017/Ex02_R,target=/home/submitter -w /home/submitter -h htcondor --name htcondor andypohl/htcondor
+docker run -d --rm --mount type=bind,source=/home/leidy/Escritorio/HTCondor-master/WorkshopComputationalPlatforms-master/HTCondor_2017/Ex02_R,target=/home/submitter -w /home/submitter -h htcondor --name htcondor andypohl/htcondor
 
 IMPORTANTE: En la opción "source" va la ruta especifica de donde se encunetran sus archivos descargados.
 
