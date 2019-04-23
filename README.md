@@ -13,14 +13,14 @@ https://drive.google.com/drive/folders/18CXUp4vJrLP6VKdOODZiv4Rmp7i9fKpN
 
 Una vez descargados los archivos se ejecutarán los siguientes pasos.
 
-#Levantar el contenedor
+Levantar el contenedor:
 
-djjfj
+docker run -d --rm -h htcondor --name htcondor andypohl/htcondor
 
-Acceder a  él
+Acceder a  él:
 
-sss
+docker exec -it -u 1000:1000 htcondor bash
 
-Una ve se  ingrese ejecutamos la tarea
+Una ve se  ingrese ejecutamos la tarea:
 
 condor_submit testR.condor
