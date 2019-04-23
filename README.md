@@ -7,7 +7,7 @@ https://docs.google.com/presentation/d/1_D_Q6aC9fJk1QEOeaOfEPR51IPQw-fd1VEmcZyL0
 
 # Ejecución
 
-Descargar el archivo R.tar.gz y añadirlo al directorio, dentro en la carpeta Ex02 una vez descargado el contenido de este repositorio:
+Descargar el archivo R.tar.gz y añadirlo al directorio, dentro en la carpeta Ex02_R una vez descargado el contenido de este repositorio:
 
 https://drive.google.com/file/d/1gv9hnrQCN0K517RzRWXFdcgL0tzqh9h7/view
 
@@ -15,7 +15,9 @@ Una vez descargados los archivos se ejecutarán los siguientes pasos.
 
 Levantar el contenedor:
 
-docker run -d --rm -h htcondor --name htcondor andypohl/htcondor
+docker run -d --rm --mount type=bind,source=/home/leidy/Escritorio/WorkshopComputationalPlatforms-master/HTCondor_2017/Ex02_R,target=/home/submitter -w /home/submitter -h htcondor --name htcondor andypohl/htcondor
+
+IMPORTANTE: En la opción "source" va la ruta especifica de donde se encunetran sus archivos descargados.
 
 Acceder a  él:
 
