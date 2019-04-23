@@ -9,7 +9,7 @@ https://docs.google.com/presentation/d/1_D_Q6aC9fJk1QEOeaOfEPR51IPQw-fd1VEmcZyL0
 
 Descargar el archivo R.tar.gz y añadirlo al directorio, dentro en la carpeta Ex02 una vez descargado el contenido de este repositorio:
 
-https://drive.google.com/drive/folders/18CXUp4vJrLP6VKdOODZiv4Rmp7i9fKpN
+https://drive.google.com/file/d/1gv9hnrQCN0K517RzRWXFdcgL0tzqh9h7/view
 
 Una vez descargados los archivos se ejecutarán los siguientes pasos.
 
@@ -21,6 +21,6 @@ Acceder a  él:
 
 docker exec -it -u 1000:1000 htcondor bash
 
-Una ve se  ingrese ejecutamos la tarea:
+Una vez se ingrese procedemos a ejecutar la tarea:
 
 condor_submit testR.condor
